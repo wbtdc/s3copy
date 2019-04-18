@@ -1,0 +1,14 @@
+<phpunit
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	>
+	<testsuites>
+		<testsuite name="s3copy">
+			<directory prefix="test-" suffix=".php">./tests/unit</directory>
+ 			<directory prefix="test-" suffix=".php">./tests/functional</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

@@ -1,0 +1,19 @@
+{
+	"name" : "davetbo/s3copy",
+	"description" : "Copies data to/from S3-compatible storage like Wasabi or Amazon S3.",
+	"type" : "project",
+	"require" : {
+		"aws/aws-sdk-php" : "^3.0@dev",
+		"vanilla/garden-cli": "~2.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "*"
+	},
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Dave Thibault",
+			"email" : "dave@webuildthe.com"
+		}
+	],
+	"minimum-stability" : "dev"
+}
