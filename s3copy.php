@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', 1);
-require './vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Aws\S3\S3Client;
 use Aws\S3\MultipartUploader;
@@ -32,7 +32,7 @@ class S3Copy {
         }
     } 
 
-    private function initializeS3Client(array $options): S3Client {
+    private function initializeS3Client(array $options) {
         echo "Initializing S3 client...";
         $this->region = $options['region'];
         $this->bucket = $options['bucket'];
