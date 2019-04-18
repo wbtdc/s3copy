@@ -1,5 +1,5 @@
 {
-	"name" : "davetbo/s3copy",
+	"name" : "wbtdc/s3copy",
 	"description" : "Copies data to/from S3-compatible storage like Wasabi or Amazon S3.",
 	"type" : "project",
 	"require" : {
