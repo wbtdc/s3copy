@@ -1,6 +1,8 @@
 <?php
+namespace Wbtdc\S3Copy;
+
 ini_set('display_errors', 1);
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 use Aws\S3\S3Client;
 use Aws\S3\MultipartUploader;

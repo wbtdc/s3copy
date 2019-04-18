@@ -1,8 +1,9 @@
 <?php
+namespace Wbtdc\S3Copy;
 ini_set('display_errors', 1);
 require_once __DIR__ . '/../helpers.php';
 require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../../s3copy.php';
+require_once __DIR__ . '/../../src/Wbtdc/S3Copy.php';
 
 use PHPUnit\Framework\TestCase;
 use Garden\Cli\Cli;

@@ -1,7 +1,9 @@
 <?php
+namespace Wbtdc\S3Copy;
+
 require_once __DIR__ . '/../helpers.php';
 require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../../s3copy.php';
+require_once __DIR__ . '/../../src/Wbtdc/S3Copy.php';
 
 use PHPUnit\Framework\TestCase;
 use Garden\Cli\Cli;
@@ -41,7 +43,7 @@ class S3CopyFunctionalTest extends TestCase
     }
     public function testInitializeS3Client() {
         global $argv;
-        $this->assertEquals('S3Copy', get_class($this->s3));
+        $this->assertEquals('Wbtdc\S3Copy\S3Copy', get_class($this->s3));
         $result = invokeMethod($this->s3, 'initializeS3Client',array($this->cli->parse($argv, true)->getOpts()));
         $this->assertEquals('Aws\S3\S3Client', get_class($result));
     }
