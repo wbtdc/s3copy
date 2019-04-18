@@ -16,9 +16,9 @@
 		}
 	],
 	"minimum-stability" : "dev",
-	"autoload": {
-	    "psr-0": {
-	        "": "src/"
-	    }
+	"autoload" : {
+		"psr-4" : {
+			"Wbtdc\\S3Copy\\" : "src/Wbtdc/S3Copy"
+		}
 	}
 }
