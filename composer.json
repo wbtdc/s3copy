@@ -4,7 +4,7 @@
 	"type" : "project",
 	"require" : {
 		"aws/aws-sdk-php" : "^3.0@dev",
-		"vanilla/garden-cli": "~2.0"
+		"vanilla/garden-cli" : "~2.0"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "*"
@@ -15,5 +15,10 @@
 			"email" : "dave@webuildthe.com"
 		}
 	],
-	"minimum-stability" : "dev"
+	"minimum-stability" : "dev",
+	"autoload": {
+	    "psr-0": {
+	        "": "src/"
+	    }
+	}
 }
